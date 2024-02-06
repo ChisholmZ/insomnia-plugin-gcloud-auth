@@ -1,9 +1,9 @@
 const {exec} = require("child_process");
 
 tokenTemplate = {
-    name: 'cloudRunIdToken',
-    displayName: "Google Cloud Run Identity Token",
-    description: "Generate an identity token for calling authenticated Google Cloud Run endpoints",
+    name: 'gcloudAcessToken',
+    displayName: "Google Cloud Access Token",
+    description: "Generate an access token for calling authenticated Google Cloud endpoints",
     args: [
         {
             displayName: "Path to Google Cloud CLI binary",
@@ -13,7 +13,7 @@ tokenTemplate = {
     ],
     run: async (_, gcloud) => {
         return await new Promise((resolve, reject) => {
-            exec(`${gcloud} auth --quiet print-identity-token`, (err, stdout, stderr) => {
+            exec(`${gcloud} auth --quiet print-access-token`, (err, stdout, stderr) => {
                 if (err) reject(err);
                 resolve(stdout.toString().trim());
             });

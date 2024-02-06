@@ -1,18 +1,18 @@
 {
-  "name": "insomnia-plugin-cloud-run-auth",
+  "name": "insomnia-plugin-gcloud-auth",
   "version": "0.1.1",
-  "description": "Plugin for auto-refreshing Google Cloud Run identity tokens",
+  "description": "Plugin for auto-refreshing Google Cloud Access tokens",
   "main": "main.js",
   "author": {
-    "name": "Nick White",
-    "url": "https://github.com/nawhi"
+    "name": "Zach Chisholm",
+    "url": "https://github.com/ChisholmZ"
   },
   "repository": {
-    "url": "https://github.com/nawhi/insomnia-plugin-cloud-run-auth"
+    "url": "https://github.com/ChisholmZ/insomnia-plugin-gcloud-auth"
   },
   "license": "MIT",
   "insomnia": {
-    "name": "cloud-run-auth",
-    "description": "Plugin for auto-refreshing Google Cloud Run identity tokens"
+    "name": "gcloud-auth",
+    "description": "Plugin for auto-refreshing Google Cloud Access tokens"
   }
 }
